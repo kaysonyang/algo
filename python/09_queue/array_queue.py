@@ -34,6 +34,8 @@ class ArrayQueue:
             item = self._items[self._head]
             self._head += 1
             return item
+        else:
+            return None
     
     def __repr__(self) -> str:
         return " ".join(item for item in self._items[self._head : self._tail])
